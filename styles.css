@@ -1,0 +1,225 @@
+
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f7f9fc;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Full-page layout */
+header,
+main,
+footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Header layout */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#logo h1 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #007BFF;
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+section h2 {
+  width: 100%;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+#aboutMe div {
+  flex: 1;
+}
+
+#aboutMe img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Projects */
+#projects ul {
+  padding-left: 1.5rem;
+}
+
+#projects li {
+  margin-bottom: 0.5rem;
+}
+
+/* Skills section */
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+#brands {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+#brands i:hover {
+  transform: scale(1.2);
+  color: #007BFF;
+  transition: all 0.3s ease;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: auto;
+  background-color: #f0f0f0;
+}
+
+.heart {
+  color: red;
+}
+
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-top: 1rem;
+  }
+
+  section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  #aboutMe img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #brands {
+    font-size: 2rem;
+    gap: 1.5rem;
+  }
+
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  #logo h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+
+/* Hidden Elements */
+#article1, #article2, #article3 {
+    display: none;
+    margin-top: 1rem;
+}
+
+#proj1, #proj2, #proj3 {
+    cursor: pointer;
+}
+
+/* Contact Page CSS*/
+#contact {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+#contact-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2.5rem;
+}
+
+#contact-icons a {
+  color: #333;
+  transition: transform 0.3s, color 0.3s;
+}
+
+#contact-icons a:hover {
+  color: #007BFF;
+  transform: scale(1.2);
+}

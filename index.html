@@ -1,9 +1,79 @@
+<!DOCTYPE html>
 <html>
-
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css"/>
+</head>
 <body>
-  <h1>Isaac De Villiers</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <header>
+        <div id="logo">
+            <h1><a href="./index.html">Isaac De Villiers</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="aboutMe">
+            <div>
+                <h2>About Me</h2>
+                <p>Hi there, My name is Isaac De Villiers, I am a Front End Web Developer working on becoming Full Stack on Codecademy!</p>
+                <p>I love coffee and playing soccer games in real life! In my free time I usually spend sometimes coding and mastering new Skills.</p>
+                <p>Fun fact! I've been programing for <span id="secondsCounter"></span> seconds!</p>
+            </div>
+            <div>
+                <img src="./images/isaac picture.jpg" alt="Isaac profile picture"/>
+            </div>
+        </section>
 
+        <section id="projects">         
+            <h2>Projects</h2>
+            <ul>
+                <li id="proj1">The first computer program</li>
+                <li id="proj2">The Analytical Engine</li>
+                <li id="proj3">The Ada Programming Language</li>
+            </ul>
+
+            <div id="article1">
+                <img src="./images/Diagram_for_the_computation_of_Bernoulli_numbers.jpg" />
+                <p>The world's first computer program for computing Bernoulli numbers.</p>
+            </div>
+
+            <div id="article2">
+                <img src="./images/analyticalmachine_babbage_london.jpg" alt="analytical machine"/>
+                <p>I helped Charles Babbage on topics ranging from math to computation that helped the development of the Analytical Engine.</p>
+            </div>
+
+            <div id="article3">
+                <img src="./images/comp.jpg" alt="ada company logo"/>
+                <p>My work inspired the United States Department of Defense to name their new programming language after me.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="brands">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-git"></i>
+                <i class="fa-brands fa-node-js"></i>
+                <i class="fa-brands fa-react"></i>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Made with <span class="heart">♥</span> in Toronto
+    </footer>
+    <script src="https://kit.fontawesome.com/38780669bb.js" crossorigin="anonymous"></script>    
+    <script src="./js/index.js"></script>  
+</body>
 </html>
